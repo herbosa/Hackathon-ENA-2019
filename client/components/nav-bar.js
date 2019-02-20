@@ -28,7 +28,7 @@ export default class NavBar extends Component {
             <Menu.Item name='who' onClick={this.handleItemClick} content='Qui sommes nous?'/>
             <Menu.Item name='cycle' onClick={this.handleItemClick} content='Cycle du biodechet'/>
             <Menu.Item name='guide' onClick={this.handleItemClick} content='Le guide du compostage' />
-            <Menu.Item name='support' onClick={this.handleItemClick} content='Nos support de tri' />
+            <Menu.Item name='support' onClick={this.handleItemClick} content='Nos supports de tri' />
             <Menu.Item name='events' onClick={this.handleItemClick} content='Nos Évènements' />
 
 

@@ -7,5 +7,6 @@
 }
 
 .nav-bar-color {
-    background-color: azure !important;
+    background-color: transparent !important;
+    color: white !important;
 }
