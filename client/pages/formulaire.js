@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import NavBar from '../components/nav-bar'
+import FormDechet from '../components/form-dechet'
 import {Helmet} from "react-helmet";
-import { Button, Dropdown, Menu, Image, Divider } from 'semantic-ui-react'
+import { Button, Dropdown, Menu, Image, Divider, Header } from 'semantic-ui-react'
 import '../static/css/form.css'
+import '../static/css/index.css'
+
 
 export default class formulaire extends Component {
     render() {
@@ -12,6 +15,8 @@ export default class formulaire extends Component {
     <Helmet>
         <title>formulaire</title>
         <meta name="description" content="formulaire" />
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 			<link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon"/>
 			<link rel="icon" href="../static/logo.png" type="image/png"/>
@@ -24,26 +29,45 @@ export default class formulaire extends Component {
                 backgroundColor: '#22CADE',
                 padding: '1em',
             }}>
-                <Divider hidden className='header-divider'/>
+                <Divider hidden className='center-divider'/>
                 <div>
+                <Header as='h1' className='white-text first-page-text' textAlign='center'>
+                    <Header.Content>J'ai des biodéchets dont je ne sais pas quoi faire.</Header.Content>
+                </Header>
 
+                <Divider hidden className='twt-perc-divider'/>
+
+                   <Header as='h1' className='white-text first-page-text' textAlign='center' >
+                        <i className="fas fa-chevron-circle-down"></i>
+                    </Header>
                 </div>
             </FullpageSection>
             
             <FullpageSection style={{
-                backgroundColor: '#EA904F',
+                backgroundColor: '#22CADE',
                 padding: '1em',
             }}>
-                <Divider hidden className='header-divider'/>
-            2
+                <Divider hidden className='fft-perc-divider'/>
+                <div>
+                <Header as='h1' className='white-text second-page-text' textAlign='center'>
+                    <Header.Content>Ça tombe bien! Nous pouvons vous aider.<br/>Dites-nous qui vous êtes et quels déchets vous avez,<br/>et nous leur trouverons un avenir</Header.Content>
+                </Header>
+
+                <Image src='static/icons/noun_Apple_Core_white.png' className="second-page-apple-core" size='small' />
+                    <Image src='static/icons/noun_Dead_Fish_white.png' className="second-page-fish" size='small' />
+
+                   <Header as='h1' className='white-text first-page-text' textAlign='center' >
+                        <i className="fas fa-chevron-circle-down"></i>
+                    </Header>
+                 </div>
             </FullpageSection>
             
             <FullpageSection style={{
-                backgroundColor: '#B5D43C',
+                backgroundColor: '#22CADE',
                 padding: '1em',
             }}>
-                <Divider hidden className='header-divider'/>
-            3
+                <Divider hidden className='fft-perc-divider'/>
+                <FormDechet/>
             </FullpageSection>
             
             </FullPageSections>
