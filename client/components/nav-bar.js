@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Button, Dropdown, Menu, Image } from 'semantic-ui-react'
 import Link from 'next/link'
+import '../static/css/header.css'
+
 
 
 export default class NavBar extends Component {
@@ -13,8 +15,8 @@ export default class NavBar extends Component {
         const { activeItem } = this.state
     
         return (
-          <div>
-          <Menu size='large' borderless>
+          <div className="nav-bar">
+          <Menu size='large' borderless className='nav-bar-color'>
           <Link href='/'>
             <Menu.Item name='logo' onClick={this.handleItemClick}>
               <Image src='static/logo.png' size='small' />

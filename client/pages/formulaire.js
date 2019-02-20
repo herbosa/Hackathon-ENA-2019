@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import NavBar from '../components/nav-bar'
 import {Helmet} from "react-helmet";
+import { Button, Dropdown, Menu, Image, Divider } from 'semantic-ui-react'
 import '../static/css/form.css'
 
 export default class formulaire extends Component {
@@ -9,8 +10,8 @@ export default class formulaire extends Component {
         return (
             <div>
     <Helmet>
-        <title>Acceuil</title>
-        <meta name="description" content="Acceuil" />
+        <title>formulaire</title>
+        <meta name="description" content="formulaire" />
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 			<link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon"/>
 			<link rel="icon" href="../static/logo.png" type="image/png"/>
@@ -20,24 +21,28 @@ export default class formulaire extends Component {
             <Fullpage>
             <FullPageSections>
             <FullpageSection style={{
-                backgroundColor: '',
+                backgroundColor: '#22CADE',
                 padding: '1em',
             }}>
-                <Divider hidden/>
-            1
+                <Divider hidden className='header-divider'/>
+                <div>
+
+                </div>
             </FullpageSection>
             
             <FullpageSection style={{
-                backgroundColor: '',
+                backgroundColor: '#EA904F',
                 padding: '1em',
             }}>
+                <Divider hidden className='header-divider'/>
             2
             </FullpageSection>
             
             <FullpageSection style={{
-                backgroundColor: '',
+                backgroundColor: '#B5D43C',
                 padding: '1em',
             }}>
+                <Divider hidden className='header-divider'/>
             3
             </FullpageSection>
             

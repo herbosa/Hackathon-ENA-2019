@@ -2,9 +2,11 @@ import React from 'react'
 import Link from 'next/link'
 import NavBar from '../components/nav-bar'
 import {Helmet} from "react-helmet";
+import '../static/css/index.css'
+
 
 const Home = () => (
-  <div>
+  <div className='main-page'>
     <Helmet>
         <title>Acceuil</title>
         <meta name="description" content="Acceuil" />
