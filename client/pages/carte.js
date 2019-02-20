@@ -7,8 +7,8 @@ export default class carte extends Component {
     return (
       <div>
     <Helmet>
-        <title>Acceuil</title>
-        <meta name="description" content="Acceuil" />
+        <title>Accueil</title>
+        <meta name="description" content="Accueil" />
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 			<link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon"/>
 			<link rel="icon" href="../static/logo.png" type="image/png"/>

@@ -23,7 +23,7 @@ export default class NavBar extends Component {
             </Menu.Item>         
             </Link>
             <Link href='/'>
-              <Menu.Item name='home' onClick={this.handleItemClick} content='Acceuil'/>
+              <Menu.Item name='home' onClick={this.handleItemClick} content='Accueil'/>
             </Link>
             <Menu.Item name='who' onClick={this.handleItemClick} content='Qui sommes nous?'/>
             <Menu.Item name='cycle' onClick={this.handleItemClick} content='Cycle du biodechet'/>
