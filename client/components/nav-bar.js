@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { Button, Dropdown, Menu } from 'semantic-ui-react'
+import { Button, Dropdown, Menu, Image } from 'semantic-ui-react'
 
 
 export default class NavBar extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
-      state = { activeItem: 'home' }
+     state = { activeItem: 'home' }
 
       handleItemClick = (e, { name }) => this.setState({ activeItem: name })
     
@@ -15,13 +12,16 @@ export default class NavBar extends Component {
         const { activeItem } = this.state
     
         return (
-          <Menu size='massive'>
-            <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} />
-            <Menu.Item
-              name='messages'
-              active={activeItem === 'messages'}
-              onClick={this.handleItemClick}
-            />
+          <div>
+          <Menu size='large' borderless>
+            <Menu.Item name='logo' onClick={this.handleItemClick}>
+              <Image src='static/logo.png' size='small' />
+            </Menu.Item>         
+            <link
+            <Menu.Item name='home' onClick={this.handleItemClick} content='Acceuil'/>
+            <Menu.Item name='who' onClick={this.handleItemClick} content='Qui sommes nous?'/>
+            <Menu.Item name='cycle' onClick={this.handleItemClick} content='Cycle du biodechet'/>
+
     
             <Menu.Menu position='right'>
               <Menu.Item>
@@ -29,6 +29,7 @@ export default class NavBar extends Component {
               </Menu.Item>
             </Menu.Menu>
           </Menu>
+          </div>
         )
       }
 }
