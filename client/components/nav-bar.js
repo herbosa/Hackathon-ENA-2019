@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Button, Dropdown, Menu, Image } from 'semantic-ui-react'
 import Link from 'next/link'
 import '../static/css/header.css'
+import '../static/css/index.css'
 
 
 

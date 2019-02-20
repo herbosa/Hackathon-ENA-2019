@@ -1,8 +1,9 @@
 
-h1, h2, h3, h4, h5, h6, a, p, {
+h1, h2, h3, h4, h5, h6, a, p {
     font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif; font-weight:100; font-stretch:normal;
 	text-align: center;
-	text-decoration: none;
+    text-decoration: none;
+    color: white !important;
 }
 
 .main-page-color {
@@ -12,5 +13,5 @@ h1, h2, h3, h4, h5, h6, a, p, {
 
 .pointer {
     cursor: pointer;
-  }
+}
 
