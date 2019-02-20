@@ -27,10 +27,12 @@
     bottom: 50%;
 }
 
-
-
 .twt-perc-divider {
     margin-top: 20% !important;
+}
+
+.tty-fi-perc-divider {
+    margin-top: 35% !important;
 }
 
 .thd-perc-divider {
@@ -44,6 +46,15 @@
 
 .ten-perc-divider {
     margin-top: 10% !important;
+}
+
+.fifty-perc-divider {
+    margin-top: 50% !important;
+}
+
+.quarter-margin {
+    margin-right: 30% !important;
+    margin-left: 30% !important;
 }
 
 

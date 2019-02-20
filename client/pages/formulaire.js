@@ -42,7 +42,7 @@ export default class formulaire extends Component {
                     </Header>
                 </div>
             </FullpageSection>
-            
+
             <FullpageSection style={{
                 backgroundColor: '#22CADE',
                 padding: '1em',
@@ -61,7 +61,7 @@ export default class formulaire extends Component {
                     </Header>
                  </div>
             </FullpageSection>
-            
+
             <FullpageSection style={{
                 backgroundColor: '#22CADE',
                 padding: '1em',
@@ -69,12 +69,11 @@ export default class formulaire extends Component {
                 <Divider hidden className='fft-perc-divider'/>
                 <FormDechet/>
             </FullpageSection>
-            
+
             </FullPageSections>
-            
+
             </Fullpage>
             </div>
             )
         }
     }
-    
