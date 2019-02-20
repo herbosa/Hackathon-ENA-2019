@@ -1,3 +1,65 @@
+h1, h2, h3, h4, h5, h6, a, p, {
+    font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif; font-weight:100; font-stretch:normal;
+		text-align: center;
+		text-decoration: none;
+}
+
+.first-page-text {
+    font-size: 48px !important;
+}
+
+.second-page-text {
+    font-size: 48px !important;
+}
+
 .header-divider {
     height: 140px !important;
 }
+
+.center-divider {
+    height: 40% !important;
+}
+
+
+.second-page-apple-core {
+    position: fixed;
+    left: 7%;
+    bottom: 20%;
+}
+
+.second-page-fish {
+    position: fixed;
+    left: 14%;
+    bottom: 50%;
+}
+
+
+
+.twt-perc-divider {
+    margin-top: 20% !important;
+}
+
+.thd-perc-divider {
+    margin-top: 30% !important;
+}
+
+
+.fft-perc-divider {
+    margin-top: 15% !important;
+}
+
+.ten-perc-divider {
+    margin-top: 10% !important;
+}
+
+
+.white-text {
+    color: white !important;
+}
+
+/*
+    backgroundColor: '#22CADE' Bl,
+    backgroundColor: '#EA904F' Or,
+    backgroundColor: '#B5D43C' Ve,
+
+*/
