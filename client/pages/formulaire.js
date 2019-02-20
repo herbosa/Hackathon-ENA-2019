@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import NavBar from '../components/nav-bar'
 import {Helmet} from "react-helmet";
+import '../static/css/form.css'
 
 export default class formulaire extends Component {
     render() {
@@ -22,6 +23,7 @@ export default class formulaire extends Component {
                 backgroundColor: '',
                 padding: '1em',
             }}>
+                <Divider hidden/>
             1
             </FullpageSection>
             
