@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NavBar from '../components/nav-bar'
 import {Helmet} from "react-helmet";
+import {Map, Marker} from 'rect-leaflet';
 
 export default class carte extends Component {
     render() {
