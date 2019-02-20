@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ap.cx/react-fullpage": "^0.1.10-alpha",
     "next": "^8.0.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
