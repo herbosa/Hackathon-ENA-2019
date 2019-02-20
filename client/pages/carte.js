@@ -4,7 +4,7 @@ export default class carte extends Component {
     render() {
     return (
       <div>
-        
+            <NavBar/>
       </div>
     )
   }

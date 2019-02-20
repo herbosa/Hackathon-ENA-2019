@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Button, Dropdown, Menu, Image } from 'semantic-ui-react'
+import Link from 'next/link'
 
 
 export default class NavBar extends Component {
@@ -14,11 +15,14 @@ export default class NavBar extends Component {
         return (
           <div>
           <Menu size='large' borderless>
+          <Link href='/'>
             <Menu.Item name='logo' onClick={this.handleItemClick}>
               <Image src='static/logo.png' size='small' />
             </Menu.Item>         
-            <link
-            <Menu.Item name='home' onClick={this.handleItemClick} content='Acceuil'/>
+            </Link>
+            <Link href='/'>
+              <Menu.Item name='home' onClick={this.handleItemClick} content='Acceuil'/>
+            </Link>
             <Menu.Item name='who' onClick={this.handleItemClick} content='Qui sommes nous?'/>
             <Menu.Item name='cycle' onClick={this.handleItemClick} content='Cycle du biodechet'/>
 
@@ -28,6 +32,8 @@ export default class NavBar extends Component {
                 <Button primary>Mon compte</Button>
               </Menu.Item>
             </Menu.Menu>
+            <Menu.Item>
+            </Menu.Item>
           </Menu>
           </div>
         )
