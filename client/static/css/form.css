@@ -1,9 +1,3 @@
-h1, h2, h3, h4, h5, h6, a, p, {
-    font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif; font-weight:100; font-stretch:normal;
-		text-align: center;
-		text-decoration: none;
-}
-
 .first-page-text {
     font-size: 48px !important;
 }
@@ -55,6 +49,10 @@ h1, h2, h3, h4, h5, h6, a, p, {
 
 .white-text {
     color: white !important;
+}
+
+.form-font {
+    font-size: 18px !important;
 }
 
 /*
