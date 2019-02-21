@@ -14,7 +14,7 @@ export default class Support extends Component {
                 <Helmet>
                     <title>formulaire</title>
                     <meta name="description" content="formulaire" />
-
+                    <meta name="googlebot" content="noindex"/>
                     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
                     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
                     <link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon" />

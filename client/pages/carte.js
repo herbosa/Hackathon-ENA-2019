@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import NavBar from '../components/nav-bar'
 import {Helmet} from "react-helmet";
-import { Button, Dropdown, Menu, Image, Divider, Header, Grid, GridColumn, HeaderContent, Form, Select, Checkbox } from 'semantic-ui-react'
+import { Button, Dropdown, Menu, Image, Divider, Header, Grid, GridColumn, HeaderContent, Form, Select, Checkbox, Segment } from 'semantic-ui-react'
 import Map from 'pigeon-maps'
 import Overlay from 'pigeon-overlay'
 import '../static/css/index.css'
@@ -26,6 +26,7 @@ export default class carte extends Component {
     return (
       <div className='main-page-color'>
     <Helmet>
+    <meta name="googlebot" content="noindex"/>
         <title>Carte</title>
         <meta name="description" content="Accueil" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
@@ -48,24 +49,38 @@ export default class carte extends Component {
           </GridColumn>
           <GridColumn></GridColumn>
           <GridColumn></GridColumn>
-          <GridColumn>
+          <GridColumn width={3}>
+          <Segment style = {{
+                backgroundColor: '#ab9275',
+                padding: '2em'
+            }}>
             <Divider hidden className='twt-perc-divider' />
+            <Grid columns={1}>
+              <Grid.Row>
             <Header as='p' textAlign='left'>
               <i class="fas fa-map-marker-alt" style={{ color: '#22CADE' }}></i>
               <HeaderContent className='white-text'>&emsp;J'ai des Biodéchets</HeaderContent>
             </Header>
+              </Grid.Row>
+              <Grid.Row>
             <Header as='p' textAlign='left'>
               <i class="fas fa-map-marker-alt" style={{ color: '#EA904F'}}></i>
               <HeaderContent className='white-text'>&emsp;Je fais du compost / je méthanise</HeaderContent>
             </Header>
+              </Grid.Row>
+              <Grid.Row>
             <Header as='p' textAlign='left'>
               <i class="fas fa-map-marker-alt" style={{ color: '#B5D43C' }}></i>
               <HeaderContent className='white-text'>&emsp;J'utilise du compost</HeaderContent>
             </Header>
-            <Form className='form-font' style={{margin: '5%'}}>
+              </Grid.Row>
+            </Grid>
+            <Divider hidden className='twt-perc-divider' />
+            <Form className='form-font'>
               <Form.Field control={Select} label='Quantité' options={options} placeholder='Quantité' />
               <Checkbox label='Transport Nécessaire' />
             </Form>
+            </Segment>
           </GridColumn>
           </Grid>
         </FullpageSection>
