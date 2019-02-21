@@ -32,10 +32,10 @@ export default class formulaire extends Component {
                 <Divider hidden className='center-divider'/>
                 <div>
                 <Header as='h1' className='white-text first-page-text' textAlign='center'>
-                    <Header.Content>J'ai des biodéchets dont je ne sais pas quoi faire.</Header.Content>
+                    <Header.Content>J'ai besoin de compost pour<br/>mon jardin, mes champs ...</Header.Content>
                 </Header>
 
-                <Divider hidden className='twt-perc-divider'/>
+                <Divider hidden className='fft-perc-divider'/>
 
                    <Header as='h1' className='white-text first-page-text' textAlign='center' >
                         <i className="fas fa-chevron-circle-down"></i>
@@ -50,12 +50,9 @@ export default class formulaire extends Component {
                 <Divider hidden className='fft-perc-divider'/>
                 <div>
                 <Header as='h1' className='white-text second-page-text' textAlign='center'>
-                    <Header.Content>Ça tombe bien! Nous pouvons vous aider.<br/>Dites-nous qui vous êtes et quels déchets vous avez,<br/>et nous leur trouverons un avenir</Header.Content>
+                    <Header.Content>Ça tombe bien! Nous pouvons vous aider.<br/>De quoi avez vous besoin ?</Header.Content>
                 </Header>
-
-                <Image src='static/icons/noun_Apple_Core_white.png' className="second-page-apple-core" size='small' />
-                    <Image src='static/icons/noun_Dead_Fish_white.png' className="second-page-fish" size='small' />
-
+                <Divider hidden className='fft-perc-divider'/>
                    <Header as='h1' className='white-text first-page-text' textAlign='center' >
                         <i className="fas fa-chevron-circle-down"></i>
                     </Header>

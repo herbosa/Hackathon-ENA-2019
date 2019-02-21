@@ -37,11 +37,11 @@ class FormUsage extends Component {
           <Checkbox label='autre'/>
         </Form.Field>
         <Form.Field width={6}>
-          <label>Je produis :</label>
+          <label>Je recherche :</label>
           <br/>
-          <Checkbox label='des déchets alimentaires organiques non triés'/>
+          <Checkbox label='du compost entier'/>
           <br/>
-          <Checkbox label='des décehts alimentaires organiques triés' onClick={this.toggleVisibility}/>
+          <Checkbox label='un type de biodéchet en particumier' onClick={this.toggleVisibility}/>
           <br/>
           <Transition visible={visible_wastes} animation='scale' duration={500}>
                     <Form.Field width={6}>
@@ -50,19 +50,19 @@ class FormUsage extends Component {
               <br/>
               <Checkbox label='fruits et légumes'/>
               <br/>
+              <Checkbox label='biodéchet vert'/>
+              <br/>
               <Checkbox label='autres'/>
               <input placeholder='' />
             </Form.Field>
             </Transition>
-          <br/>
-          <Checkbox label='des déchets verts'/>
         </Form.Field>
         </Form.Group>
         <Form.Group>
         <Form.Field width={3}/>              
 
         <Form.Field width={6}>
-          <label>Je produis par an :</label>
+          <label>J'ai besoin de :</label>
           <br/>
           <Checkbox label='0 - 500 kg de biodéchets'/>
           <br/>
@@ -76,7 +76,7 @@ class FormUsage extends Component {
         <Form.Group>
         <Form.Field width={3}/>              
         <Form.Field width={6}>
-          <label>J'ai un moyen de transport pour mes déchets :</label>
+          <label>J'ai un moyen de transport pour ce compost :</label>
           <br/>
           <Checkbox>
             </Checkbox>&emsp;
