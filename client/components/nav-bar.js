@@ -26,7 +26,7 @@ export default class NavBar extends Component {
             <Link href='/'>
               <Menu.Item name='home'  content='Accueil'/>
               </Link>
-            <Link href='/'>
+            <Link href='/qui-sommes-nous'>
             <Menu.Item name='who'  content='Qui sommes nous?'/>
             </Link>
             <Link href='/'>
@@ -38,7 +38,7 @@ export default class NavBar extends Component {
             <Link href='/supports-de-tri'>
               <Menu.Item name='support'  content='Nos supports de tri' />
               </Link>
-            <Link href='/'>
+            <Link href='/nos-evenements'>
             <Menu.Item name='events'  content='Nos Évènements' />
             </Link>
 
