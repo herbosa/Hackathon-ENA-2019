@@ -3,8 +3,8 @@ import Link from 'next/link'
 import NavBar from '../components/nav-bar'
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import {Helmet} from "react-helmet";
-import { HeaderContent, Grid, GridColumn, GridRow } from 'semantic-ui-react';
-import { Button, Dropdown, Menu, Image, Divider, Header } from 'semantic-ui-react'
+import { HeaderContent, Grid, GridColumn, GridRow, SegmentGroup, RevealContent } from 'semantic-ui-react';
+import { Image, Divider, Header, Segment, Reveal } from 'semantic-ui-react'
 import '../static/css/index.css'
 import '../static/css/form.css'
 
@@ -24,51 +24,60 @@ const Home = () => (
     <Fullpage>
         <FullPageSections>
             <FullpageSection style = {{
-                backgroundColor: '#000',
+                backgroundColor: '#ab9275',
                 padding: '1em'
             }}>
             <div>
                 <Divider hidden className='fft-perc-divider' />
-                <Grid columns={3} relaxed='very'>
-                    <GridColumn style={{ backgroundColor: '#22CADE' }}>
+                <Header as='h1' className='white-text first-page-text' textAlign='center'>
+                    <HeaderContent>Bienvenue sur Compost'Eat!</HeaderContent>
+                </Header>
+                <Divider hidden className='five-perc-divider' />
+                <SegmentGroup horizontal>
+
+            <Link href="/formulaire-dechet">
+                    <Segment style={{ backgroundColor: '#22CADE' }}>
                         <GridRow>
                         <Header as='h1' className='white-text second-page-text' textAlign='center'>
                             <HeaderContent>J'ai des biodéchets</HeaderContent>
                         </Header>
                         </GridRow>
                         <GridRow>
-                            <Image src='static/icons/noun_Apple_Core_white.png' size='small' />
+                            <Image src='static/icons/noun_Apple_Core_white.png' size='tiny' centered />
                         </GridRow>
-                    </GridColumn>
-                    <GridColumn style={{ backgroundColor: '#EA904F' }}>
-                    <GridRow>
-                        <Header as='h1' className='white-text second-page-text' textAlign='center'>
-                            <HeaderContent>Je fais du compost ou <br />je méthanise<br /></HeaderContent>
-                        </Header>
-                    </GridRow>
-                    <GridRow>
-                        
-                    </GridRow>
-                    </GridColumn>
-                    <GridColumn style={{ backgroundColor: '#B5D43C' }}>
+                    </Segment>
+            </Link>
+                    <Segment style={{ backgroundColor: '#EA904F' }} >
+                        <GridRow>
+                            <Header as='h1' className='white-text second-page-text' textAlign='center'>
+                                <HeaderContent>Je fais du compost ou <br />je méthanise<br /></HeaderContent>
+                            </Header>
+                        </GridRow>
+                        <GridRow>
+                            <Header as='h1' className='white-text second-page-text' textAlign='center'>
+                                <i class="fas fa-recycle"></i>
+                            </Header>
+                        </GridRow>
+                    </Segment>
+                    <Segment style={{ backgroundColor: '#B5D43C' }}>
                         <GridRow>
                         <Header as='h1' className='white-text second-page-text' textAlign='center'>
                             <HeaderContent>J'utilise du compost</HeaderContent>
                         </Header>
                         </GridRow>
                         <GridRow>
-                            <Image src='static/icons/noun_plants_white.png' size='small' />
+                            <Image src='static/icons/noun_plants_white.png' size='tiny' centered />
                         </GridRow>
-                    </GridColumn>
-                </Grid>
-                <Divider hidden className='fft-perc-divider' />
+                    </Segment>
+                </SegmentGroup>
+                <Divider hidden className='ten-perc-divider' />
                 <Header as = 'h1' className='white-text first-page-text' textAlign='center'>
                     <i className="fas fa-chevron-circle-down"></i>
                 </Header>
             </div>
             </FullpageSection>
             <FullpageSection style={{
-                backgroundColor: '#000',
+                backgroundColor: '#ab9275',
                 padding: '1em'
             }}>
                 <div>
@@ -81,17 +90,17 @@ const Home = () => (
                     </Header>
                     <Grid columns={3} relaxed='very'>
                     <GridColumn>
-                        <Image src='static/icons/noun_Bread_white.png' size='tiny' />
-                        <Image src='static/icons/noun_Apple_Core_white.png' size='tiny' />
+                        <Image src='static/icons/noun_Bread_white.png' size='tiny' centered />
+                        <Image src='static/icons/noun_Apple_Core_white.png' size='tiny' centered />
                     </GridColumn>
                     <GridColumn>
-                        <Image src='static/icons/noun_Cheese_white.png' size='tiny' />
-                        <Image src='static/icons/noun_Cigarette_white.png' size='tiny' />
+                        <Image src='static/icons/noun_Cheese_white.png' size='tiny' centered />
+                        <Image src='static/icons/noun_Cigarette_white.png' size='tiny' centered />
                     </GridColumn>
                     <GridColumn>
-                        <Image src='static/icons/noun_can_white.png' size='tiny' />
-                        <Image src='static/icons/noun_Meat_white.png' size='tiny' />
-                        <Image src='static/icons/noun_Peeled Potato_white.png' size='tiny' />
+                        <Image src='static/icons/noun_can_white.png' size='tiny' centered />
+                        <Image src='static/icons/noun_Meat_white.png' size='tiny' centered />
+                        <Image src='static/icons/noun_Peeled Potato_white.png' size='tiny' centered />
                     </GridColumn>
                     </Grid>
                     <Divider hidden className='ten-perc-divider' />
@@ -101,7 +110,7 @@ const Home = () => (
                 </div>
             </FullpageSection>
             <FullpageSection style={{
-                backgroundColor: '#000',
+                backgroundColor: '#ab9275',
                 padding: '1em'
             }}>
             <div>
