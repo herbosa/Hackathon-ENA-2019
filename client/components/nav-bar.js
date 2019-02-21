@@ -32,7 +32,7 @@ export default class NavBar extends Component {
             <Link href='/'>
             <Menu.Item name='cycle'  content='Cycle du biodechet'/>
             </Link>
-            <Link href='/'>
+            <Link href='/nos-evenements'>
             <Menu.Item name='guide'  content='Le guide du compostage' />
             </Link>
             <Link href='/supports-de-tri'>

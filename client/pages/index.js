@@ -63,7 +63,7 @@ const Home = () => (
                         </GridRow>
                         <GridRow>
                             <Header as='h1' className='white-text second-page-text' textAlign='center'>
-                                <i class="fas fa-recycle"></i>
+                                <i className="fas fa-recycle"></i>
                             </Header>
                         </GridRow>
                     </Segment>

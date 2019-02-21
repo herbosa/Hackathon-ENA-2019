@@ -58,19 +58,19 @@ export default class carte extends Component {
             <Grid columns={1}>
               <Grid.Row>
             <Header as='p' textAlign='left'>
-              <i class="fas fa-map-marker-alt" style={{ color: '#22CADE' }}></i>
+              <i className="fas fa-map-marker-alt" style={{ color: '#22CADE' }}></i>
               <HeaderContent className='white-text'>&emsp;J'ai des Biodéchets</HeaderContent>
             </Header>
               </Grid.Row>
               <Grid.Row>
             <Header as='p' textAlign='left'>
-              <i class="fas fa-map-marker-alt" style={{ color: '#EA904F'}}></i>
+              <i className="fas fa-map-marker-alt" style={{ color: '#EA904F'}}></i>
               <HeaderContent className='white-text'>&emsp;Je fais du compost / je méthanise</HeaderContent>
             </Header>
               </Grid.Row>
               <Grid.Row>
             <Header as='p' textAlign='left'>
-              <i class="fas fa-map-marker-alt" style={{ color: '#B5D43C' }}></i>
+              <i className="fas fa-map-marker-alt" style={{ color: '#B5D43C' }}></i>
               <HeaderContent className='white-text'>&emsp;J'utilise du compost</HeaderContent>
             </Header>
               </Grid.Row>
