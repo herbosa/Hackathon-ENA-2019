@@ -35,7 +35,7 @@ const Home = () => (
                 <Divider hidden className='five-perc-divider' />
                 <SegmentGroup horizontal>
 
-            <Link href="/formulaire-dechet">
+            <Link href="/formulaire-biodechet">
                     <Segment style={{ backgroundColor: '#22CADE' }}>
                         <GridRow>
                         <Header as='h1' className='white-text second-page-text' textAlign='center'>
