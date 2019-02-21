@@ -4,7 +4,7 @@ import NavBar from '../components/nav-bar'
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import {Helmet} from "react-helmet";
 import { HeaderContent, Grid, GridColumn, GridRow, SegmentGroup, RevealContent } from 'semantic-ui-react';
-import { Image, Divider, Header, Segment, Reveal } from 'semantic-ui-react'
+import { Embed, Image, Divider, Header, Segment, Reveal } from 'semantic-ui-react'
 import '../static/css/index.css'
 import '../static/css/form.css'
 
@@ -33,10 +33,11 @@ const Home = () => (
                     <HeaderContent>Bienvenue sur Compost'Eat!</HeaderContent>
                 </Header>
                 <Divider hidden className='five-perc-divider' />
-                <SegmentGroup horizontal>
-
-            <Link href="/formulaire-dechet">
-                    <Segment style={{ backgroundColor: '#22CADE' }}>
+                <Grid  columns={3}>
+                <Grid.Column>
+            <Link href="/formulaire-biodechet" className='pointer'>
+            <div className='shadow-hover'>
+                    <Segment  style={{ backgroundColor: '#22CADE' }}>
                         <GridRow>
                         <Header as='h1' className='white-text second-page-text' textAlign='center'>
                             <HeaderContent>J'ai des biodéchets</HeaderContent>
@@ -46,7 +47,12 @@ const Home = () => (
                             <Image src='static/icons/noun_Apple_Core_white.png' size='tiny' centered />
                         </GridRow>
                     </Segment>
+            </div>
             </Link>
+                </Grid.Column>
+                <Grid.Column>
+            <Link href="/formulaire-compost" className='pointer'>
+                    <div className='shadow-hover'>
                     <Segment style={{ backgroundColor: '#EA904F' }} >
                         <GridRow>
                             <Header as='h1' className='white-text second-page-text' textAlign='center'>
@@ -59,6 +65,12 @@ const Home = () => (
                             </Header>
                         </GridRow>
                     </Segment>
+                        </div>
+            </Link>
+            </Grid.Column>
+            <Grid.Column>
+            <Link href="/formulaire-utilisation" className='pointer'>
+                    <div className='shadow-hover'>
                     <Segment style={{ backgroundColor: '#B5D43C' }}>
                         <GridRow>
                         <Header as='h1' className='white-text second-page-text' textAlign='center'>
@@ -69,7 +81,10 @@ const Home = () => (
                             <Image src='static/icons/noun_plants_white.png' size='tiny' centered />
                         </GridRow>
                     </Segment>
-                </SegmentGroup>
+                        </div>
+             </Link>
+             </Grid.Column>
+             </Grid>
                 <Divider hidden className='ten-perc-divider' />
                 <Header as = 'h1' className='white-text first-page-text' textAlign='center'>
                     <i className="fas fa-chevron-circle-down"></i>
@@ -121,9 +136,7 @@ const Home = () => (
                 <Header as='h1' className='form-font quarter-margin' textAlign='center'>
                     <HeaderContent>Les biodéchets peuvent avoir une seconde vie avec le compostage ou la méthanisation. Avec ces deux procédés, on obtient de l'engrais ou de l'énergie que d'autres peuvent réutiliser. </HeaderContent>
                 </Header>
-                <Header as='h1' className='white-text first-page-text' textAlign='center'>
-                    <i className="fas fa-chevron-circle-down"></i>
-                </Header>
+                <Embed icon='right circle arrow' placeholder='/static/placeholder-video.png' url='/static/troignon.mp4'/>
             </div>
             </FullpageSection>
         </FullPageSections>
