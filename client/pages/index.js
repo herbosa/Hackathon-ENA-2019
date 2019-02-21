@@ -103,20 +103,20 @@ const Home = () => (
                     <Header as='h1' className='form-font quarter-margin' textAlign='center'>
                             <HeaderContent>A la maison, au jardin ou à la cantine, nous produisons des déchets organiques (épluchures de légumes, restes de repas, tonte de gazon, feuilles mortes ...) Ils composent 40 à 60 % de nos poubelles.</HeaderContent>
                     </Header>
-                    <Divider className=''/>
+                    <Divider  hidden className=''/>
                     <Grid centered textAlign='center'>
                     <Grid.Column width={2}/>
                     <Grid.Column width={5}>
                     <Segment style={{ backgroundColor: '#B5D43C' }}>
                       <Grid centered textAlign='center'>
                       <Grid.Row columns={4}>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={3}>
                           <Image src='../static/icons/noun_Bread_white.png' size='medium ' centered />
                         </Grid.Column>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={3}>
                           <Image src='../static/icons/noun_Apple_Core_white.png' size='medium ' centered />
                         </Grid.Column>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={3}>
                           <Image src='../static/icons/noun_Cheese_white.png' size='medium ' centered />
                         </Grid.Column>
                         <Grid.Column width={1}>
@@ -125,10 +125,10 @@ const Home = () => (
                       <Grid.Row>
                         <Grid.Column width={1}>
                         </Grid.Column>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={3}>
                           <Image src='../static/icons/noun_Meat_white.png' size='medium ' centered />
                         </Grid.Column>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={3}>
                           <Image src='../static/icons/noun_Peeled Potato_white.png' size='medium ' centered />
                         </Grid.Column>
                         <Grid.Column width={2}>
@@ -146,10 +146,10 @@ const Home = () => (
                      <Grid.Row columns={4}>
                      <Grid.Column width={1}>
                         </Grid.Column>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={3}>
                         <Image src='../static/icons/noun_Cigarette_white.png' size='small ' centered />
                         </Grid.Column>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={3}>
                         <Image src='../static/icons/noun_can_white.png' size='small ' centered />
                         </Grid.Column>
                       </Grid.Row>
@@ -157,7 +157,7 @@ const Home = () => (
                         <Grid.Column width={2}>
                           <Icon color="red" name='times' size='huge' />
                         </Grid.Column>
-                        <Grid.Column width={2}>
+                        <Grid.Column width={3}>
                         <Image src='../static/icons/noun_Yogurt_white.png' size='small ' centered />
                         </Grid.Column>
                         <Grid.Column width={1}>
@@ -179,7 +179,7 @@ const Home = () => (
                 padding: '1em'
             }}>
             <div>
-                        <Divider hidden style={{ marginTop: '12%' }} />
+                <Divider hidden style={{ marginTop: '12%' }} />
                 <Header as='h1' className='white-text second-page-text' textAlign='center'>
                     <HeaderContent>Biodéchets: Ca sert à quoi?</HeaderContent>
                 </Header>
