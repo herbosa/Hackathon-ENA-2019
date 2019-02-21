@@ -4,7 +4,7 @@ import NavBar from '../components/nav-bar'
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import {Helmet} from "react-helmet";
 import { HeaderContent, Grid, GridColumn, GridRow, SegmentGroup, RevealContent } from 'semantic-ui-react';
-import { Embed, Image, Divider, Header, Segment, Reveal } from 'semantic-ui-react'
+import { Embed, Image, Divider, Header, Segment, Reveal, Icon } from 'semantic-ui-react'
 import '../static/css/index.css'
 import '../static/css/form.css'
 
@@ -44,7 +44,7 @@ const Home = () => (
                         </Header>
                         </GridRow>
                         <GridRow>
-                            <Image src='static/icons/noun_Apple_Core_white.png' size='tiny' centered />
+                            <Image src='static/icons/noun_Apple_Core_white.png' size='tiny ' centered />
                         </GridRow>
                     </Segment>
             </div>
@@ -78,7 +78,7 @@ const Home = () => (
                         </Header>
                         </GridRow>
                         <GridRow>
-                            <Image src='static/icons/noun_plants_white.png' size='tiny' centered />
+                            <Image src='static/icons/noun_plants_white.png' size='tiny ' centered />
                         </GridRow>
                     </Segment>
                         </div>
@@ -103,20 +103,70 @@ const Home = () => (
                     <Header as='h1' className='form-font quarter-margin' textAlign='center'>
                             <HeaderContent>A la maison, au jardin ou à la cantine, nous produisons des déchets organiques (épluchures de légumes, restes de repas, tonte de gazon, feuilles mortes ...) Ils composent 40 à 60 % de nos poubelles.</HeaderContent>
                     </Header>
-                    <Grid columns={3} relaxed='very'>
-                    <GridColumn>
-                        <Image src='static/icons/noun_Bread_white.png' size='tiny' centered />
-                        <Image src='static/icons/noun_Apple_Core_white.png' size='tiny' centered />
-                    </GridColumn>
-                    <GridColumn>
-                        <Image src='static/icons/noun_Cheese_white.png' size='tiny' centered />
-                        <Image src='static/icons/noun_Cigarette_white.png' size='tiny' centered />
-                    </GridColumn>
-                    <GridColumn>
-                        <Image src='static/icons/noun_can_white.png' size='tiny' centered />
-                        <Image src='static/icons/noun_Meat_white.png' size='tiny' centered />
-                        <Image src='static/icons/noun_Peeled Potato_white.png' size='tiny' centered />
-                    </GridColumn>
+                    <Divider className=''/>
+                    <Grid centered textAlign='center'>
+                    <Grid.Column width={2}/>
+                    <Grid.Column width={5}>
+                    <Segment style={{ backgroundColor: '#B5D43C' }}>
+                      <Grid centered textAlign='center'>
+                      <Grid.Row columns={4}>
+                        <Grid.Column width={2}>
+                          <Image src='static/icons/noun_Bread_white.png' size='medium ' centered />
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                          <Image src='static/icons/noun_Apple_Core_white.png' size='medium ' centered />
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                          <Image src='static/icons/noun_Cheese_white.png' size='medium ' centered />
+                        </Grid.Column>
+                        <Grid.Column width={1}>
+                        </Grid.Column>
+                      </Grid.Row>
+                      <Grid.Row>
+                        <Grid.Column width={1}>
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                          <Image src='static/icons/noun_Meat_white.png' size='medium ' centered />
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                          <Image src='static/icons/noun_Peeled Potato_white.png' size='medium ' centered />
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                          <Icon color="green" name='check' size='huge' />
+                        </Grid.Column>
+                      </Grid.Row>
+                      </Grid >
+                      </Segment>
+                      </Grid.Column>
+                    <Grid.Column width={2}>
+                    </Grid.Column>
+                    <Grid.Column width={5}>
+                    <Segment style={{ backgroundColor: '#EA904F' }} >
+                    <Grid centered textAlign='center'>
+                     <Grid.Row columns={4}>
+                     <Grid.Column width={1}>
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                        <Image src='static/icons/noun_Cigarette_white.png' size='small ' centered />
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                        <Image src='static/icons/noun_can_white.png' size='small ' centered />
+                        </Grid.Column>
+                      </Grid.Row>
+                      <Grid.Row>
+                        <Grid.Column width={2}>
+                          <Icon color="red" name='times' size='huge' />
+                        </Grid.Column>
+                        <Grid.Column width={2}>
+                        <Image src='static/icons/noun_Yogurt_white.png' size='small ' centered />
+                        </Grid.Column>
+                        <Grid.Column width={1}>
+                        </Grid.Column>
+                      </Grid.Row>
+                      </Grid>
+                    </Segment>
+                    </Grid.Column>
+                    <Grid.Column width={2}/>
                     </Grid>
                     <Divider hidden className='ten-perc-divider' />
                     <Header as='h1' className='white-text first-page-text' textAlign='center'>
@@ -129,14 +179,16 @@ const Home = () => (
                 padding: '1em'
             }}>
             <div>
-                <Divider hidden className='fft-perc-divider' />
+                <Divider hidden style={{marginTop: '7%'}} />
                 <Header as='h1' className='white-text second-page-text' textAlign='center'>
-                    <HeaderContent>Biodéchets: C'est quoi?</HeaderContent>
+                    <HeaderContent>Biodéchets: Ca sert à quoi?</HeaderContent>
                 </Header>
                 <Header as='h1' className='form-font quarter-margin' textAlign='center'>
                     <HeaderContent>Les biodéchets peuvent avoir une seconde vie avec le compostage ou la méthanisation. Avec ces deux procédés, on obtient de l'engrais ou de l'énergie que d'autres peuvent réutiliser. </HeaderContent>
                 </Header>
-                <Embed icon='right circle arrow' placeholder='/static/placeholder-video.png' url='/static/troignon.mp4'/>
+                <div style={{width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
+                    <Embed placeholder='static/logo-couleur.png' source='youtube' id='lJ7kpuB0aNA'/>
+                </div>
             </div>
             </FullpageSection>
         </FullPageSections>
