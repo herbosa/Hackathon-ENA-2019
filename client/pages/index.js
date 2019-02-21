@@ -179,7 +179,7 @@ const Home = () => (
                 padding: '1em'
             }}>
             <div>
-                <Divider hidden style={{marginTop: '7%'}} />
+                        <Divider hidden style={{ marginTop: '12%' }} />
                 <Header as='h1' className='white-text second-page-text' textAlign='center'>
                     <HeaderContent>Biodéchets: Ca sert à quoi?</HeaderContent>
                 </Header>
