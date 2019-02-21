@@ -19,7 +19,7 @@ export default class NavBar extends Component {
           <div className="nav-bar">
           <Menu size='large' borderless className='nav-bar-color'>
           <Link href='/'>
-            <Menu.Item name='logo' onClick={this.handleItemClick}>
+            <Menu.Item>
               <Image src='static/logo.png' size='small' />
             </Menu.Item>
             </Link>

@@ -17,11 +17,7 @@ const Component = dynamic(() => import(''), {
 
 
 export default class carte extends Component {
-  componentWillMount() {
-    this.setState({ position: [51.505, -0.09] })
-    }
   render() {
-      const { position } = this.state
 
     return (
       <div>
