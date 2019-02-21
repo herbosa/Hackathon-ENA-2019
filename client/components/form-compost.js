@@ -24,7 +24,7 @@ class FormCompost extends Component {
     return (
       <Form textAlign='center' center className='form-font'>
           <Form.Group>
-          <Form.Field width={3}/>              
+          <Form.Field width={3}/>
         <Form.Field width={6} >
           <label>Je suis :</label>
           <br/>
@@ -51,7 +51,7 @@ class FormCompost extends Component {
         </Form.Field>
         </Form.Group>
         <Form.Group>
-        <Form.Field width={3}/>              
+        <Form.Field width={3}/>
 
         <Form.Field width={6}>
           <label>Je produis par an :</label>
@@ -75,7 +75,7 @@ class FormCompost extends Component {
         </Form.Field>
         </Form.Group>
         <Form.Group>
-        <Form.Field width={3}/>              
+        <Form.Field width={3}/>
         <Form.Field width={6}>
           <label>Je propose un service de compost :</label>
           <br/>
@@ -92,7 +92,7 @@ class FormCompost extends Component {
         </Form.Field>
         </Form.Group>
         <Form.Group>
-        <Form.Field width={3}/>              
+        <Form.Field width={3}/>
         <Form.Field width={4}>
             <label>J'habite :</label>
             <input placeholder='Mon adresse Postale' />
