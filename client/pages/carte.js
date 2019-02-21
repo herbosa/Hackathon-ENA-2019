@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import NavBar from '../components/nav-bar'
 import {Helmet} from "react-helmet";
-import { Button, Dropdown, Menu, Image, Divider, Header } from 'semantic-ui-react'
+import { Button, Dropdown, Menu, Image, Divider, Header, Grid, GridColumn, GridRow, HeaderContent } from 'semantic-ui-react'
 import Map from 'pigeon-maps'
 import Overlay from 'pigeon-overlay'
 import '../static/css/index.css'
@@ -20,7 +20,7 @@ export default class carte extends Component {
   render() {
 
     return (
-      <div>
+      <div className='main-page-color'>
     <Helmet>
         <title>Carte</title>
         <meta name="description" content="Accueil" />
@@ -30,13 +30,27 @@ export default class carte extends Component {
 			<link rel="icon" href="../static/logo.png" type="image/png"/>
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"/>
     </Helmet>
-    <NavBar></NavBar>
-      <Divider hidden className='twt-perc-divider'/>
-
-  <Map className='twt-perc-divider' center={[50.879, 4.6997]} zoom={12} width={600} height={400}>
-    <Overlay anchor={[50.879, 4.6997]} offset={[120, 79]}>
-    </Overlay>
-  </Map>
+      <NavBar color='#ab9275' />
+      <Fullpage className='main-page-color'>
+      <FullPageSections>
+        <FullpageSection className='main-page-color'>
+          <Divider hidden className='ten-perc-divider'/>
+          <Grid columns={2}>
+          <GridColumn>
+                  <Map className='twt-perc-divider' center={[48.5734053, 7.7521113]} zoom={15} width={1200} height={700}>
+                    <Overlay anchor={[48.5734053, 7.7521113]} offset={[120, 79]}>
+            </Overlay>
+          </Map>
+          </GridColumn>
+          <GridColumn>
+            <Header as='h1' className='white_text first-page-text' textAlign='right'>
+              <HeaderContent>Carte des environs</HeaderContent>
+            </Header>
+          </GridColumn>
+          </Grid>
+        </FullpageSection>
+      </FullPageSections>
+      </Fullpage>
       </div>
     )
   }
