@@ -22,7 +22,7 @@ export default class formulaire extends Component {
 			<link rel="icon" href="../static/logo.png" type="image/png"/>
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"/>
     </Helmet>
-            <NavBar/>
+                <NavBar color='#B5D43C' />
             <Fullpage>
             <FullPageSections>
             <FullpageSection style={{

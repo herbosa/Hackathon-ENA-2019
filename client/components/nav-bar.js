@@ -16,7 +16,7 @@ export default class NavBar extends Component {
         const { activeItem } = this.state
 
         return (
-          <div className="nav-bar">
+          <div className="nav-bar" style={{backgroundColor: this.props.color}}>
           <Menu size='large' borderless className='nav-bar-color'>
           <Link href='/'>
             <Menu.Item>
