@@ -53,8 +53,8 @@ export default class formulaire extends Component {
                     <Header.Content>Ça tombe bien! Nous pouvons vous aider.<br/>Dites-nous qui vous êtes et quels déchets vous avez,<br/>et nous leur trouverons un avenir</Header.Content>
                 </Header>
 
-                <Image src='static/icons/noun_Apple_Core_white.png' className="second-page-apple-core" size='small' />
-                    <Image src='static/icons/noun_Dead_Fish_white.png' className="second-page-fish" size='small' />
+                <Image src='../static/icons/noun_Apple_Core_white.png' className="second-page-apple-core" size='small' />
+                    <Image src='../static/icons/noun_Dead_Fish_white.png' className="second-page-fish" size='small' />
 
                    <Header as='h1' className='white-text first-page-text' textAlign='center' >
                         <i className="fas fa-chevron-circle-down"></i>

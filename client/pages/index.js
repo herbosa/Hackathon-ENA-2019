@@ -44,7 +44,7 @@ const Home = () => (
                         </Header>
                         </GridRow>
                         <GridRow>
-                            <Image src='static/icons/noun_Apple_Core_white.png' size='tiny ' centered />
+                            <Image src='../static/icons/noun_Apple_Core_white.png' size='tiny ' centered />
                         </GridRow>
                     </Segment>
             </div>
@@ -78,7 +78,7 @@ const Home = () => (
                         </Header>
                         </GridRow>
                         <GridRow>
-                            <Image src='static/icons/noun_plants_white.png' size='tiny ' centered />
+                            <Image src='../static/icons/noun_plants_white.png' size='tiny ' centered />
                         </GridRow>
                     </Segment>
                         </div>
@@ -111,13 +111,13 @@ const Home = () => (
                       <Grid centered textAlign='center'>
                       <Grid.Row columns={4}>
                         <Grid.Column width={2}>
-                          <Image src='static/icons/noun_Bread_white.png' size='medium ' centered />
+                          <Image src='../static/icons/noun_Bread_white.png' size='medium ' centered />
                         </Grid.Column>
                         <Grid.Column width={2}>
-                          <Image src='static/icons/noun_Apple_Core_white.png' size='medium ' centered />
+                          <Image src='../static/icons/noun_Apple_Core_white.png' size='medium ' centered />
                         </Grid.Column>
                         <Grid.Column width={2}>
-                          <Image src='static/icons/noun_Cheese_white.png' size='medium ' centered />
+                          <Image src='../static/icons/noun_Cheese_white.png' size='medium ' centered />
                         </Grid.Column>
                         <Grid.Column width={1}>
                         </Grid.Column>
@@ -126,10 +126,10 @@ const Home = () => (
                         <Grid.Column width={1}>
                         </Grid.Column>
                         <Grid.Column width={2}>
-                          <Image src='static/icons/noun_Meat_white.png' size='medium ' centered />
+                          <Image src='../static/icons/noun_Meat_white.png' size='medium ' centered />
                         </Grid.Column>
                         <Grid.Column width={2}>
-                          <Image src='static/icons/noun_Peeled Potato_white.png' size='medium ' centered />
+                          <Image src='../static/icons/noun_Peeled Potato_white.png' size='medium ' centered />
                         </Grid.Column>
                         <Grid.Column width={2}>
                           <Icon color="green" name='check' size='huge' />
@@ -147,10 +147,10 @@ const Home = () => (
                      <Grid.Column width={1}>
                         </Grid.Column>
                         <Grid.Column width={2}>
-                        <Image src='static/icons/noun_Cigarette_white.png' size='small ' centered />
+                        <Image src='../static/icons/noun_Cigarette_white.png' size='small ' centered />
                         </Grid.Column>
                         <Grid.Column width={2}>
-                        <Image src='static/icons/noun_can_white.png' size='small ' centered />
+                        <Image src='../static/icons/noun_can_white.png' size='small ' centered />
                         </Grid.Column>
                       </Grid.Row>
                       <Grid.Row>
@@ -158,7 +158,7 @@ const Home = () => (
                           <Icon color="red" name='times' size='huge' />
                         </Grid.Column>
                         <Grid.Column width={2}>
-                        <Image src='static/icons/noun_Yogurt_white.png' size='small ' centered />
+                        <Image src='../static/icons/noun_Yogurt_white.png' size='small ' centered />
                         </Grid.Column>
                         <Grid.Column width={1}>
                         </Grid.Column>
@@ -187,7 +187,7 @@ const Home = () => (
                     <HeaderContent>Les biodéchets peuvent avoir une seconde vie avec le compostage ou la méthanisation. Avec ces deux procédés, on obtient de l'engrais ou de l'énergie que d'autres peuvent réutiliser. </HeaderContent>
                 </Header>
                 <div style={{width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
-                    <Embed placeholder='static/logo-couleur.png' source='youtube' id='lJ7kpuB0aNA'/>
+                    <Embed placeholder='../static/logo-couleur.png' source='youtube' id='lJ7kpuB0aNA'/>
                 </div>
             </div>
             </FullpageSection>

@@ -20,7 +20,7 @@ export default class NavBar extends Component {
           <Menu size='large' borderless className='nav-bar-color'>
           <Link href='/'>
             <Menu.Item>
-              <Image src='static/logo.png' size='small' />
+              <Image src='../static/logo.png' size='small' />
             </Menu.Item>
             </Link>
             <Link href='/'>

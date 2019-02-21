@@ -29,7 +29,7 @@ export default class Support extends Component {
                             padding: '1em'
                         }}>
                         <Divider hidden className='ten-perc-divider' />
-                        <Image src='static/slide 0.png' centered size='massive' />
+                        <Image src='../static/slide 0.png' centered size='massive' />
                         <Header as='h1' className='white-text first-page-text' textAlign='center'>
                             <i className="fas fa-chevron-circle-down"></i>
                         </Header>
@@ -39,7 +39,7 @@ export default class Support extends Component {
                             padding: '1em'
                         }}>
                             <Divider hidden className='ten-perc-divider' />
-                            <Image src='static/slide 1.png' centered size='massive' />
+                            <Image src='../static/slide 1.png' centered size='massive' />
                             <Header as='h1' className='white-text first-page-text' textAlign='center'>
                                 <i className="fas fa-chevron-circle-down"></i>
                             </Header>
@@ -49,7 +49,7 @@ export default class Support extends Component {
                             padding: '1em'
                         }}>
                             <Divider hidden className='ten-perc-divider' />
-                            <Image src='static/slide 2.png' centered size='massive' />
+                            <Image src='../static/slide 2.png' centered size='massive' />
                             <Header as='h1' className='white-text first-page-text' textAlign='center'>
                                 <i className="fas fa-chevron-circle-down"></i>
                             </Header>
@@ -59,7 +59,7 @@ export default class Support extends Component {
                             padding: '1em'
                         }}>
                             <Divider hidden className='ten-perc-divider' />
-                            <Image src='static/slide 3.png' centered size='massive' />
+                            <Image src='../static/slide 3.png' centered size='massive' />
                         </FullpageSection>
                     </FullPageSections>
                 </Fullpage>

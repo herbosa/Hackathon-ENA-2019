@@ -6,7 +6,6 @@ module.exports = withCss({
     config.node = {
       fs: 'empty'
     }
-
     return config
   }
 })
