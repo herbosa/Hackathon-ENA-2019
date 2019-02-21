@@ -62,7 +62,7 @@ export default class carte extends Component {
               <i class="fas fa-map-marker-alt" style={{ color: '#B5D43C' }}></i>
               <HeaderContent className='white-text'>&emsp;J'utilise du compost</HeaderContent>
             </Header>
-            <Form textAlign='center' center className='form-font' style={{margin: '5%'}}>
+            <Form className='form-font' style={{margin: '5%'}}>
               <Form.Field control={Select} label='Quantité' options={options} placeholder='Quantité' />
               <Checkbox label='Transport Nécessaire' />
             </Form>
