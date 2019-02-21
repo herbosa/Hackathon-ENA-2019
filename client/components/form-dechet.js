@@ -24,7 +24,7 @@ class FormDechet extends Component {
     return (
       <Form textAlign='center' center className='form-font'>
           <Form.Group>
-          <Form.Field width={3}/>              
+          <Form.Field width={3}/>
         <Form.Field width={6} >
           <label>Je suis :</label>
           <br/>
@@ -59,7 +59,7 @@ class FormDechet extends Component {
         </Form.Field>
         </Form.Group>
         <Form.Group>
-        <Form.Field width={3}/>              
+        <Form.Field width={3}/>
 
         <Form.Field width={6}>
           <label>Je produis par an :</label>
@@ -74,7 +74,7 @@ class FormDechet extends Component {
         </Form.Field>
         </Form.Group>
         <Form.Group>
-        <Form.Field width={3}/>              
+        <Form.Field width={3}/>
         <Form.Field width={6}>
           <label>J'ai un moyen de transport pour mes déchets :</label>
           <br/>
@@ -88,14 +88,14 @@ class FormDechet extends Component {
         </Form.Field>
         </Form.Group>
         <Form.Group>
-        <Form.Field width={3}/>              
+        <Form.Field width={3}/>
         <Form.Field width={6} width={4}>
             <label>J'habite :</label>
             <input placeholder='Mon adresse Postale' />
             <input placeholder='Mon adresse E-mail' />
 
         </Form.Field>
-        <Form.Field width={4}/>              
+        <Form.Field width={4}/>
         <Form.Field color='blue' width={6} center href="/carte" control={Button}>Valider</Form.Field>
         </Form.Group>
       </Form>
