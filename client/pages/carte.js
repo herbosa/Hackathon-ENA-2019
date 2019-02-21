@@ -6,7 +6,7 @@ import { Button, Dropdown, Menu, Image, Divider, Header, Grid, GridColumn, GridR
 import Map from 'pigeon-maps'
 import Overlay from 'pigeon-overlay'
 import '../static/css/index.css'
-
+import '../static/css/form.css'
 
 /*load without ssr
 import dynamic from 'next/dynamic'
@@ -43,9 +43,14 @@ export default class carte extends Component {
           </Map>
           </GridColumn>
           <GridColumn>
+            <GridRow centered>
             <Header as='h1' className='white_text first-page-text' textAlign='right'>
-              <HeaderContent>Carte des environs</HeaderContent>
+              <HeaderContent>Carte des environs:</HeaderContent>
             </Header>
+            <Header as='p' className='blue-text' textAlign='right'>
+              <i class="fas fa-map-marker-alt"></i>
+            </Header>
+            </GridRow>
           </GridColumn>
           </Grid>
         </FullpageSection>

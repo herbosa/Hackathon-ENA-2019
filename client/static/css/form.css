@@ -65,6 +65,18 @@
     color: white !important;
 }
 
+.blue-text {
+    color: '#22CADE' !important;
+}
+
+.orange-text {
+    color: '#EA904F' !important;
+}
+
+.green-text {
+    color: '#B5D43C' !important;
+}
+
 .form-font {
     font-size: 18px !important;
 }

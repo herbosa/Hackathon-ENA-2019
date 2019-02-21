@@ -26,13 +26,13 @@ export default class NavBar extends Component {
             <Link href='/'>
               <Menu.Item name='home'  content='Accueil'/>
             </Link>
-            <Menu.Item name='who'  content='Qui sommes nous?'/>
-            <Menu.Item name='cycle'  content='Cycle du biodechet'/>
-            <Menu.Item name='guide'  content='Le guide du compostage' />
+            <Menu.Item name='who' content='Qui sommes nous?'/>
+            <Menu.Item name='cycle' content='Cycle du biodechet'/>
+            <Menu.Item name='guide' content='Le guide du compostage' />
             <Link href='/supports-de-tri'>
-              <Menu.Item name='support'  content='Nos supports de tri' />
+              <Menu.Item name='support' content='Nos supports de tri' />
             </Link>
-            <Menu.Item name='events'  content='Nos Évènements' />
+            <Menu.Item name='events' content='Nos Évènements' />
 
 
             <Menu.Menu position='right'>
