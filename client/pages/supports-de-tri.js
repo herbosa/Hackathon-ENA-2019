@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import NavBar from '../components/nav-bar'
 import FormUsage from '../components/form-utilisatison'
 import { Helmet } from "react-helmet";
@@ -11,7 +10,7 @@ export default class Support extends Component {
     render() {
         return (
             <div className='main-page'>
-                <Helmet>
+            <Helmet bodyAttributes={{ style: 'background-color : #ab9275' }}>
                     <title>formulaire</title>
                     <meta name="description" content="formulaire" />
                     <meta name="googlebot" content="noindex"/>
@@ -22,47 +21,23 @@ export default class Support extends Component {
                     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
                 </Helmet>
                 <NavBar color='#ab9275' />
-                <Fullpage>
-                    <FullPageSections>
-                        <FullpageSection style={{
-                            backgroundColor: '#ab9275',
-                            padding: '1em'
-                        }}>
                         <Divider hidden className='ten-perc-divider' />
                         <Image src='../static/slide 0.png' centered size='massive' />
                         <Header as='h1' className='white-text first-page-text' textAlign='center'>
                             <i className="fas fa-chevron-circle-down"></i>
                         </Header>
-                        </FullpageSection>
-                        <FullpageSection style={{
-                            backgroundColor: '#ab9275',
-                            padding: '1em'
-                        }}>
                             <Divider hidden className='ten-perc-divider' />
                             <Image src='../static/slide 1.png' centered size='massive' />
                             <Header as='h1' className='white-text first-page-text' textAlign='center'>
                                 <i className="fas fa-chevron-circle-down"></i>
                             </Header>
-                        </FullpageSection>
-                        <FullpageSection style={{
-                            backgroundColor: '#ab9275',
-                            padding: '1em'
-                        }}>
                             <Divider hidden className='ten-perc-divider' />
                             <Image src='../static/slide 2.png' centered size='massive' />
                             <Header as='h1' className='white-text first-page-text' textAlign='center'>
                                 <i className="fas fa-chevron-circle-down"></i>
                             </Header>
-                        </FullpageSection>
-                        <FullpageSection style={{
-                            backgroundColor: '#ab9275',
-                            padding: '1em'
-                        }}>
                             <Divider hidden className='ten-perc-divider' />
                             <Image src='../static/slide 3.png' centered size='massive' />
-                        </FullpageSection>
-                    </FullPageSections>
-                </Fullpage>
             </div>
         )
     }

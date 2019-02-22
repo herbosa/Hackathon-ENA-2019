@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import NavBar from '../components/nav-bar'
 import FormUsage from '../components/form-utilisatison'
 import {Helmet} from "react-helmet";
@@ -12,7 +11,7 @@ export default class formulaire extends Component {
     render() {
         return (
             <div>
-    <Helmet>
+        <Helmet bodyAttributes={{ style: 'background-color : #B5D43C' }}>
         <title>formulaire</title>
         <meta name="description" content="formulaire" />
         <meta name="googlebot" content="noindex"/>
@@ -24,12 +23,6 @@ export default class formulaire extends Component {
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"/>
     </Helmet>
                 <NavBar color='#B5D43C' />
-            <Fullpage>
-            <FullPageSections>
-            <FullpageSection style={{
-                backgroundColor: '#B5D43C',
-                padding: '1em',
-            }}>
                 <Divider hidden className='center-divider'/>
                 <div>
                 <Header as='h1' className='white-text first-page-text' textAlign='center'>
@@ -42,12 +35,6 @@ export default class formulaire extends Component {
                         <i className="fas fa-chevron-circle-down"></i>
                     </Header>
                 </div>
-            </FullpageSection>
-            
-            <FullpageSection style={{
-                backgroundColor: '#B5D43C',
-                padding: '1em',
-            }}>
                 <Divider hidden className='fft-perc-divider'/>
                 <div>
                 <Header as='h1' className='white-text second-page-text' textAlign='center'>
@@ -58,21 +45,9 @@ export default class formulaire extends Component {
                         <i className="fas fa-chevron-circle-down"></i>
                     </Header>
                  </div>
-            </FullpageSection>
-            
-            <FullpageSection style={{
-                backgroundColor: '#B5D43C',
-                padding: '1em',
-            }}>
                 <Divider hidden className='fft-perc-divider'/>
                 <FormUsage/>
-            </FullpageSection>
-            
-            </FullPageSections>
-            
-            </Fullpage>
             </div>
             )
         }
     }
-    

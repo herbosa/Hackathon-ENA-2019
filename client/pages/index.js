@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import NavBar from '../components/nav-bar'
-import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import {Helmet} from "react-helmet";
 import { HeaderContent, Grid, GridColumn, GridRow, SegmentGroup, RevealContent } from 'semantic-ui-react';
 import { Embed, Image, Divider, Header, Segment, Reveal, Icon } from 'semantic-ui-react'
@@ -11,7 +10,7 @@ import '../static/css/form.css'
 
 const Home = () => (
   <div className='main-page'>
-    <Helmet>
+    <Helmet bodyAttributes={{ style: 'background-color : #ab9275' }}>
         <title>Accueil</title>
         <meta name="googlebot" content="noindex"/>
 
@@ -23,12 +22,6 @@ const Home = () => (
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"/>
     </Helmet>
         <NavBar color='#ab9275'/>
-    <Fullpage>
-        <FullPageSections>
-            <FullpageSection style = {{
-                backgroundColor: '#ab9275',
-                padding: '1em'
-            }}>
             <div>
                 <Divider hidden className='fft-perc-divider' />
                 <Header as='h1' className='white-text first-page-text' textAlign='center'>
@@ -92,11 +85,6 @@ const Home = () => (
                     <i className="fas fa-chevron-circle-down"></i>
                 </Header>
             </div>
-            </FullpageSection>
-            <FullpageSection style={{
-                backgroundColor: '#ab9275',
-                padding: '1em'
-            }}>
                 <div>
                     <Divider hidden className='fft-perc-divider' />
                     <Header as='h1' className='white-text second-page-text' textAlign='center'>
@@ -175,11 +163,6 @@ const Home = () => (
                         <i className="fas fa-chevron-circle-down"></i>
                     </Header>
                 </div>
-            </FullpageSection>
-            <FullpageSection style={{
-                backgroundColor: '#ab9275',
-                padding: '1em'
-            }}>
             <div>
                 <Divider hidden style={{ marginTop: '12%' }} />
                 <Header as='h1' className='white-text second-page-text' textAlign='center'>
@@ -191,10 +174,8 @@ const Home = () => (
                 <div style={{width: '50%', marginLeft: 'auto', marginRight: 'auto' }}>
                     <Embed placeholder='../static/logo-couleur.png' source='youtube' id='lJ7kpuB0aNA'/>
                 </div>
+            <Divider hidden style={{ marginTop: '12%' }} />
             </div>
-            </FullpageSection>
-        </FullPageSections>
-    </Fullpage>
   </div>
 )
 

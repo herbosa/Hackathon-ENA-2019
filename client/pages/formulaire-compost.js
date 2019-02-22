@@ -1,18 +1,11 @@
 import React, { Component } from 'react'
-import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
-import NavBar from '../components/nav-bar'
-import FormCompost from '../components/form-compost'
-import {Helmet} from "react-helmet";
-import { Button, Dropdown, Menu, Image, Divider, Header } from 'semantic-ui-react'
-import '../static/css/form.css'
-import '../static/css/index.css'
 
 
 export default class formulaire extends Component {
     render() {
         return (
             <div>
-    <Helmet>
+                <Helmet bodyAttributes={{ style: 'background-color : #EA904F' }}>
         <title>formulaire</title>
         <meta name="description" content="formulaire" />
         <meta name="googlebot" content="noindex"/>
@@ -24,12 +17,6 @@ export default class formulaire extends Component {
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"/>
     </Helmet>
                 <NavBar color='#EA904F' />
-            <Fullpage>
-            <FullPageSections>
-            <FullpageSection style={{
-                backgroundColor: '#EA904F',
-                padding: '1em',
-            }}>
                 <Divider hidden className='center-divider'/>
                 <div>
                 <Header as='h1' className='white-text first-page-text' textAlign='center'>
@@ -42,12 +29,6 @@ export default class formulaire extends Component {
                         <i className="fas fa-chevron-circle-down"></i>
                     </Header>
                 </div>
-            </FullpageSection>
-            
-            <FullpageSection style={{
-                backgroundColor: '#EA904F',
-                padding: '1em',
-            }}>
                 <Divider hidden className='fft-perc-divider'/>
                 <div>
                 <Header as='h1' className='white-text second-page-text' textAlign='center'>
@@ -58,21 +39,9 @@ export default class formulaire extends Component {
                         <i className="fas fa-chevron-circle-down"></i>
                     </Header>
                  </div>
-            </FullpageSection>
-            
-            <FullpageSection style={{
-                backgroundColor: '#EA904F',
-                padding: '1em',
-            }}>
                 <Divider hidden className='fft-perc-divider'/>
                 <FormCompost/>
-            </FullpageSection>
-            
-            </FullPageSections>
-            
-            </Fullpage>
             </div>
             )
         }
     }
-    

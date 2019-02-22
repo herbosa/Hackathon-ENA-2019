@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage'
 import NavBar from '../components/nav-bar'
 import {Helmet} from "react-helmet";
 import { Button, Dropdown, Menu, Image, Divider, Header, Grid, GridColumn, HeaderContent, Form, Select, Checkbox, Segment } from 'semantic-ui-react'
@@ -36,9 +35,6 @@ export default class carte extends Component {
       <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"/>
     </Helmet>
       <NavBar color='#ab9275' />
-      <Fullpage className='main-page-color'>
-      <FullPageSections>
-        <FullpageSection className='main-page-color'>
           <Divider hidden className='ten-perc-divider'/>
           <Grid columns={4}>
           <GridColumn>
@@ -83,9 +79,6 @@ export default class carte extends Component {
             </Segment>
           </GridColumn>
           </Grid>
-        </FullpageSection>
-      </FullPageSections>
-      </Fullpage>
       </div>
     )
   }
